@@ -1,7 +1,0 @@
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\obj\Debug\DnDConsoleApplication.csprojResolveAssemblyReference.cache
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\obj\Debug\DnDConsoleApplication.csproj.CoreCompileInputs.cache
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\bin\Debug\DnDConsoleApplication.exe.config
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\bin\Debug\DnDConsoleApplication.exe
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\bin\Debug\DnDConsoleApplication.pdb
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\obj\Debug\DnDConsoleApplication.exe
-C:\Users\SipiRau\source\repos\DnDConsoleApplication\DnDConsoleApplication\obj\Debug\DnDConsoleApplication.pdb

@@ -15,8 +15,7 @@ namespace DnDConsoleApplication
         {
             mb = new MusicBox();
             c = new Character();
-
-            mb.PlayAllNotes();
+            mb.PlayAttack();
         }
     }
 }

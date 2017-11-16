@@ -16,6 +16,21 @@ namespace DnDConsoleApplication
         public int Attack { get { return attack; } }
         public bool IsBroken { get { return isBroken; } }
 
+        public void SetName(string weaponName)
+        {
+            name = weaponName;
+        }
+
+        public void SetAttack(int attack)
+        {
+            this.attack = attack;
+        }
+
+        public void SetBroken()
+        {
+            isBroken = true;
+        }
+
         public void Init()
         {
             name = "Dragon Slayer";

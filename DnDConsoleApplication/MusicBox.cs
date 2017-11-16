@@ -8,21 +8,44 @@ namespace DnDConsoleApplication
 {
     class MusicBox
     {
-        Notes notes = new Notes(247, 294, 311, 349, 370, 415, 466, 494);
+        Notes notes = new Notes(247, 
+                                294, 
+                                311, 
+                                349, 
+                                370, 
+                                415, 
+                                466, 
+                                494,
+                                587,
+                                622,
+                                698,
+                                740,
+                                831,
+                                932,
+                                988);
+
         private const int thirdOfSecond = 300;
         private const int oneSecond = 1000;
 
-        public void PlayDramaticSound()
+        public void PlayMajorChord()
         {
-            Console.Beep(notes.Gb, thirdOfSecond / 2);
-            Console.Beep(notes.Gb, thirdOfSecond / 2);
-            Console.Beep(notes.Gb, thirdOfSecond / 2);
-            Console.Beep(notes.Eb, oneSecond * 3 / 2);
+            Console.Beep(notes.Gb1, thirdOfSecond / 2);
+            Console.Beep(notes.Bb1, thirdOfSecond / 2);
+            Console.Beep(notes.D2, (int)(thirdOfSecond * 1.5d));
+        }
 
-            Console.Beep(notes.F, thirdOfSecond / 2);
-            Console.Beep(notes.F, thirdOfSecond / 2);
-            Console.Beep(notes.F, thirdOfSecond / 2);
-            Console.Beep(notes.D, oneSecond * 3);
+        public void PlayGameOver()
+        {
+            Console.Beep(notes.Bb1, thirdOfSecond / 2);
+            Console.Beep(notes.Gb1, thirdOfSecond / 2);
+            Console.Beep(notes.Eb1, (int)(thirdOfSecond * 1.5d));
+        }
+
+        public void PlayAttack()
+        {
+            Console.Beep(notes.D1, 100);
+            Console.Beep(notes.D1, 100);
+            Console.Beep(notes.Eb1, 100);
         }
 
         public void PlayUpNDown()
@@ -40,47 +63,96 @@ namespace DnDConsoleApplication
             }
         }
 
-        public void PlayAllNotes()
+        /*public void PlayAllNotes()
         {
             Console.Beep(notes.Cb1, thirdOfSecond / 2);
-            Console.Beep(notes.D, thirdOfSecond / 2);
-            Console.Beep(notes.Eb, thirdOfSecond / 2);
-            Console.Beep(notes.F, thirdOfSecond / 2);
-            Console.Beep(notes.Gb, thirdOfSecond / 2);
-            Console.Beep(notes.Ab, thirdOfSecond / 2);
-            Console.Beep(notes.Bb, thirdOfSecond / 2);
+            Console.Beep(notes.D1, thirdOfSecond / 2);
+            Console.Beep(notes.Eb1, thirdOfSecond / 2);
+            Console.Beep(notes.F1, thirdOfSecond / 2);
+            Console.Beep(notes.Gb1, thirdOfSecond / 2);
+            Console.Beep(notes.Ab1, thirdOfSecond / 2);
+            Console.Beep(notes.Bb1, thirdOfSecond / 2);
+
             Console.Beep(notes.Cb2, thirdOfSecond / 2);
-            Console.Beep(notes.Bb, thirdOfSecond / 2);
-            Console.Beep(notes.Ab, thirdOfSecond / 2);
-            Console.Beep(notes.Gb, thirdOfSecond / 2);
-            Console.Beep(notes.F, thirdOfSecond / 2);
-            Console.Beep(notes.Eb, thirdOfSecond / 2);
-            Console.Beep(notes.D, thirdOfSecond / 2);
+            Console.Beep(notes.D2, thirdOfSecond / 2);
+            Console.Beep(notes.Eb2, thirdOfSecond / 2);
+            Console.Beep(notes.F2, thirdOfSecond / 2);
+            Console.Beep(notes.Gb2, thirdOfSecond / 2);
+            Console.Beep(notes.Ab2, thirdOfSecond / 2);
+            Console.Beep(notes.Bb2, thirdOfSecond / 2);
+
+            Console.Beep(notes.Cb3, thirdOfSecond / 2);
+            Console.Beep(notes.Bb2, thirdOfSecond / 2);
+            Console.Beep(notes.Ab2, thirdOfSecond / 2);
+            Console.Beep(notes.Gb2, thirdOfSecond / 2);
+            Console.Beep(notes.F2, thirdOfSecond / 2);
+            Console.Beep(notes.Eb2, thirdOfSecond / 2);
+            Console.Beep(notes.D2, thirdOfSecond / 2);
+
+            Console.Beep(notes.Cb2, thirdOfSecond / 2);
+            Console.Beep(notes.Bb1, thirdOfSecond / 2);
+            Console.Beep(notes.Ab1, thirdOfSecond / 2);
+            Console.Beep(notes.Gb1, thirdOfSecond / 2);
+            Console.Beep(notes.F1, thirdOfSecond / 2);
+            Console.Beep(notes.Eb1, thirdOfSecond / 2);
+            Console.Beep(notes.D1, thirdOfSecond / 2);
+
             Console.Beep(notes.Cb1, thirdOfSecond / 2);
-        }
+
+        }*/
     }
 
     struct Notes
     {
         public int Cb1;
-        public int D;
-        public int Eb;
-        public int F;
-        public int Gb;
-        public int Ab;
-        public int Bb;
+        public int D1;
+        public int Eb1;
+        public int F1;
+        public int Gb1;
+        public int Ab1;
+        public int Bb1;
         public int Cb2;
+        public int D2;
+        public int Eb2;
+        public int F2;
+        public int Gb2;
+        public int Ab2;
+        public int Bb2;
+        public int Cb3;
 
-        public Notes(int cb1, int d, int eb, int f, int gb, int ab, int bb, int cb2)
+        public Notes(int cb1, 
+                     int d1, 
+                     int eb1, 
+                     int f1, 
+                     int gb1, 
+                     int ab1, 
+                     int bb1, 
+                     int cb2,
+                     int d2,
+                     int eb2,
+                     int f2,
+                     int gb2,
+                     int ab2,
+                     int bb2,
+                     int cb3)
         {
             Cb1 = cb1;
-            D = d;
-            Eb = eb;
-            F = f;
-            Gb = gb;
-            Ab = ab;
-            Bb = bb;
+            D1 = d1;
+            Eb1 = eb1;
+            F1 = f1;
+            Gb1 = gb1;
+            Ab1 = ab1;
+            Bb1 = bb1;
+
             Cb2 = cb2;
+            D2 = d2;
+            Eb2 = eb2;
+            F2 = f2;
+            Gb2 = gb2;
+            Ab2 = ab2;
+            Bb2 = bb2;
+
+            Cb3 = cb3;
         }
     }
 }

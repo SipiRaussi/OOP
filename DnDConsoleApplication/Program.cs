@@ -10,6 +10,7 @@ namespace DnDConsoleApplication
     {
         static void Main(string[] args)
         {
+            Console.Title = "Dungeons & Dragons";
             Game g = new Game();
             g.Start();
         }

@@ -8,6 +8,13 @@ namespace DnDConsoleApplication
 {
     class Character
     {
+        public Character(string name)
+        {
+            this.name = name;
+            Init();
+        }
+
+
         // Private variables
         private string name;
         private int level;

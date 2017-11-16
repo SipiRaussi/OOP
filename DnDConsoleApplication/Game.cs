@@ -14,8 +14,9 @@ namespace DnDConsoleApplication
         public void Start()
         {
             mb = new MusicBox();
-            c = new Character();
-            mb.PlayAttack();
+            c = new Character("Sipi");
+
+            Console.WriteLine("Character name: " + c.Name);
         }
     }
 }
